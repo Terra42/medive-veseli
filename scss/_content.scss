@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    width: 33vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__img {
+    width: 33vw;
+  }
+
+  &__title {
+    margin-top: 5vh;
+  }
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10vh;
+  text-align: center;
+}

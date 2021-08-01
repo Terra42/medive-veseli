@@ -1,0 +1,28 @@
+@import 'config', 'fonts', 'hex-grid', 'content', 'coordinates';
+
+body {
+  font-family: $secondary-font;
+  background-color: $background-color;
+  cursor: url('../img/bee.png'), auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: $text-color;
+  font-size: 4.5rem;
+  font-family: $primary-font;
+}
+
+p {
+  color: $text-color;
+  font-size: 1.5rem;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

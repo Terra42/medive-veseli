@@ -1,0 +1,258 @@
+.hex1 {
+  top: set-coordinate-Y($desktop-breakpoint-height) +
+    set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex2 {
+  left: set-coordinate-X($desktop-breakpoint-width);
+}
+
+.hex3 {
+  left: set-coordinate-X($desktop-breakpoint-width);
+  top: set-coordinate-Y($desktop-breakpoint-height);
+}
+
+.hex4 {
+  left: set-coordinate-X($desktop-breakpoint-width);
+  top: set-coordinate-Y($desktop-breakpoint-height) * 2;
+}
+
+.hex5 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 2;
+  top: set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex6 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 2;
+  top: set-coordinate-Y($desktop-breakpoint-height) +
+    set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex7 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 2;
+  top: set-coordinate-Y($desktop-breakpoint-height) * 2 +
+    set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex8 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 3;
+  top: set-coordinate-Y($desktop-breakpoint-height);
+}
+
+.hex9 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 3;
+  top: set-coordinate-Y($desktop-breakpoint-height) * 2;
+}
+
+.hex10 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 4;
+  top: set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex11 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 4;
+  top: set-coordinate-Y($desktop-breakpoint-height) +
+    set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+.hex12 {
+  left: set-coordinate-X($desktop-breakpoint-width) * 4;
+  top: set-coordinate-Y($desktop-breakpoint-height) * 2 +
+    set-coordinate-Y($desktop-breakpoint-height) / 2;
+}
+
+@media (max-width: $laptop-breakpoint-width),
+  (max-height: $laptop-breakpoint-height) {
+  .hex1 {
+    top: set-coordinate-Y($laptop-breakpoint-height) +
+      set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex2 {
+    left: set-coordinate-X($laptop-breakpoint-width);
+  }
+
+  .hex3 {
+    left: set-coordinate-X($laptop-breakpoint-width);
+    top: set-coordinate-Y($laptop-breakpoint-height);
+  }
+
+  .hex4 {
+    left: set-coordinate-X($laptop-breakpoint-width);
+    top: set-coordinate-Y($laptop-breakpoint-height) * 2;
+  }
+
+  .hex5 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 2;
+    top: set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex6 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 2;
+    top: set-coordinate-Y($laptop-breakpoint-height) +
+      set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex7 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 2;
+    top: set-coordinate-Y($laptop-breakpoint-height) * 2 +
+      set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex8 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 3;
+    top: set-coordinate-Y($laptop-breakpoint-height);
+  }
+
+  .hex9 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 3;
+    top: set-coordinate-Y($laptop-breakpoint-height) * 2;
+  }
+
+  .hex10 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 4;
+    top: set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex11 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 4;
+    top: set-coordinate-Y($laptop-breakpoint-height) +
+      set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+
+  .hex12 {
+    left: set-coordinate-X($laptop-breakpoint-width) * 4;
+    top: set-coordinate-Y($laptop-breakpoint-height) * 2 +
+      set-coordinate-Y($laptop-breakpoint-height) / 2;
+  }
+}
+
+@media (max-width: $tablet-breakpoint-width),
+  (max-height: $tablet-breakpoint-height) {
+  .hex1 {
+    top: set-coordinate-Y($tablet-breakpoint-height) +
+      set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex2 {
+    left: set-coordinate-X($tablet-breakpoint-width);
+  }
+
+  .hex3 {
+    left: set-coordinate-X($tablet-breakpoint-width);
+    top: set-coordinate-Y($tablet-breakpoint-height);
+  }
+
+  .hex4 {
+    left: set-coordinate-X($tablet-breakpoint-width);
+    top: set-coordinate-Y($tablet-breakpoint-height) * 2;
+  }
+
+  .hex5 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 2;
+    top: set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex6 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 2;
+    top: set-coordinate-Y($tablet-breakpoint-height) +
+      set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex7 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 2;
+    top: set-coordinate-Y($tablet-breakpoint-height) * 2 +
+      set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex8 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 3;
+    top: set-coordinate-Y($tablet-breakpoint-height);
+  }
+
+  .hex9 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 3;
+    top: set-coordinate-Y($tablet-breakpoint-height) * 2;
+  }
+
+  .hex10 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 4;
+    top: set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex11 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 4;
+    top: set-coordinate-Y($tablet-breakpoint-height) +
+      set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+
+  .hex12 {
+    left: set-coordinate-X($tablet-breakpoint-width) * 4;
+    top: set-coordinate-Y($tablet-breakpoint-height) * 2 +
+      set-coordinate-Y($tablet-breakpoint-height) / 2;
+  }
+}
+
+@media (max-width: $mobile-breakpoint-width),
+  (max-height: $mobile-breakpoint-height) {
+  .hex1 {
+    top: set-coordinate-Y($mobile-breakpoint-height) +
+      set-coordinate-Y($mobile-breakpoint-height) / 2;
+  }
+  .hex2 {
+    left: set-coordinate-X($mobile-breakpoint-width);
+  }
+
+  .hex3 {
+    left: set-coordinate-X($mobile-breakpoint-width);
+    top: set-coordinate-Y($mobile-breakpoint-height);
+  }
+
+  .hex4 {
+    left: set-coordinate-X($mobile-breakpoint-width);
+    top: set-coordinate-Y($mobile-breakpoint-height) * 2;
+  }
+
+  .hex5 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 2;
+    top: set-coordinate-Y($mobile-breakpoint-height) / 2;
+  }
+
+  .hex6 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 2;
+    top: set-coordinate-Y($mobile-breakpoint-height) +
+      set-coordinate-Y($mobile-breakpoint-height) / 2;
+  }
+
+  .hex7 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 2;
+    top: set-coordinate-Y($mobile-breakpoint-height) * 2 +
+      set-coordinate-Y($mobile-breakpoint-height) / 2;
+  }
+
+  .hex8 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 3;
+    top: set-coordinate-Y($mobile-breakpoint-height);
+  }
+
+  .hex9 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 3;
+    top: set-coordinate-Y($mobile-breakpoint-height) * 2;
+  }
+
+  .hex10 {
+    left: set-coordinate-X($mobile-breakpoint-width);
+    top: set-coordinate-Y($mobile-breakpoint-height) * 3;
+  }
+
+  .hex11 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 2;
+    top: set-coordinate-Y($mobile-breakpoint-height) * 3 +
+      set-coordinate-Y($mobile-breakpoint-height) / 2;
+  }
+
+  .hex12 {
+    left: set-coordinate-X($mobile-breakpoint-width) * 3;
+    top: set-coordinate-Y($mobile-breakpoint-height) * 4;
+  }
+}
