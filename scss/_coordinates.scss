@@ -1,3 +1,39 @@
+@function set-coordinate-X($breakpoint-width) {
+  @if $breakpoint-width == 360px {
+    @return $item-width - 178px;
+  } @else if $breakpoint-width == 576px {
+    @return $item-width - 150px;
+  } @else if $breakpoint-width == 768px {
+    @return $item-width - 128px;
+  } @else if $breakpoint-width == 992px {
+    @return $item-width - 110px;
+  } @else {
+    @return $item-width - 85px;
+  }
+}
+
+@function set-coordinate-Y($breakpoint-width) {
+  @if $breakpoint-width == 360px {
+    @return $item-height - 147px;
+  } @else if $breakpoint-width == 576px {
+    @return $item-width - 136px;
+  } @else if $breakpoint-width == 768px {
+    @return $item-height - 90px;
+  } @else if $breakpoint-width == 992px {
+    @return $item-height - 70px;
+  } @else {
+    @return $item-height - 40px;
+  }
+}
+
+@function set-coordinate-X-height($breakpoint-height) {
+  @return $item-width - 50px;
+}
+
+@function set-coordinate-Y-height($breakpoint-height) {
+  @return $item-height;
+}
+
 .hex1 {
   top: set-coordinate-Y($xs-breakpoint-width) +
     set-coordinate-Y($xs-breakpoint-width) / 2;
@@ -314,5 +350,70 @@
     left: set-coordinate-X($xl-breakpoint-width) * 4;
     top: set-coordinate-Y($xl-breakpoint-width) * 2 +
       set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+}
+
+@media screen and (min-height: $xl-breakpoint-height) {
+  .hex1 {
+    top: set-coordinate-Y-height($xl-breakpoint-height) +
+      set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex2 {
+    left: set-coordinate-X-height($xl-breakpoint-height);
+  }
+
+  .hex3 {
+    left: set-coordinate-X-height($xl-breakpoint-height);
+    top: set-coordinate-Y-height($xl-breakpoint-height);
+  }
+
+  .hex4 {
+    left: set-coordinate-X-height($xl-breakpoint-height);
+    top: set-coordinate-Y-height($xl-breakpoint-height) * 2;
+  }
+
+  .hex5 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 2;
+    top: set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex6 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 2;
+    top: set-coordinate-Y-height($xl-breakpoint-height) +
+      set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex7 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 2;
+    top: set-coordinate-Y-height($xl-breakpoint-height) * 2 +
+      set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex8 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 3;
+    top: set-coordinate-Y-height($xl-breakpoint-height);
+  }
+
+  .hex9 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 3;
+    top: set-coordinate-Y-height($xl-breakpoint-height) * 2;
+  }
+
+  .hex10 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 4;
+    top: set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex11 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 4;
+    top: set-coordinate-Y-height($xl-breakpoint-height) +
+      set-coordinate-Y-height($xl-breakpoint-height) / 2;
+  }
+
+  .hex12 {
+    left: set-coordinate-X-height($xl-breakpoint-height) * 4;
+    top: set-coordinate-Y-height($xl-breakpoint-height) * 2 +
+      set-coordinate-Y-height($xl-breakpoint-height) / 2;
   }
 }

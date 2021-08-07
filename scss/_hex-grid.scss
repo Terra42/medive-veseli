@@ -94,7 +94,32 @@
 
 @media (min-width: $lg-breakpoint-width) {
   .hex-grid {
-    width: $item-width * 3.4;
+    width: $item-width * 2.9;
+    height: $item-height * 2.4;
+
+    &__item {
+      max-width: $item-width - 80px;
+      max-height: $item-height - 80px;
+
+      .container {
+        width: $item-width - 80px;
+        height: $item-height - 80px;
+      }
+
+      .form {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $xl-breakpoint-width) {
+  .hex-grid {
+    width: $item-width * 3.5;
     height: $item-height * 2.8;
 
     &__item {
@@ -107,17 +132,17 @@
       }
 
       .form {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
 
     &__title {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
   }
 }
 
-@media (min-width: $xl-breakpoint-width) {
+@media screen and (min-height: $xl-breakpoint-height) {
   .hex-grid {
     width: $item-width * 4.3;
     height: $item-height * 3.5;
@@ -132,12 +157,12 @@
       }
 
       .form {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
 
     &__title {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
   }
 }

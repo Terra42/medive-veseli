@@ -4,16 +4,16 @@ body {
   font-family: $secondary-font;
   background-color: $background-color;
   cursor: url('../img/bee.png'), auto;
+  animation: transitionIn 0.75s;
+  color: $text-color;
 }
 
 h1 {
-  color: $text-color;
   font-size: 4.5rem;
   font-family: $primary-font;
 }
 
 p {
-  color: $text-color;
   font-size: 1.5rem;
 }
 
@@ -23,4 +23,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

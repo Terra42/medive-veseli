@@ -12,6 +12,8 @@ $md-breakpoint-width: 768px;
 $sm-breakpoint-width: 576px;
 $xs-breakpoint-width: 360px;
 
+$xl-breakpoint-height: 830px;
+
 $item-width: 250px;
 $item-height: 230px;
 
@@ -23,32 +25,4 @@ $item-height: 230px;
 
 @mixin transition-ease {
   transition: all 0.3s ease-in-out;
-}
-
-@function set-coordinate-X($breakpoint-width) {
-  @if $breakpoint-width == 360px {
-    @return $item-width - 178px;
-  } @else if $breakpoint-width == 576px {
-    @return $item-width - 150px;
-  } @else if $breakpoint-width == 768px {
-    @return $item-width - 128px;
-  } @else if $breakpoint-width == 992px {
-    @return $item-width - 88px;
-  } @else {
-    @return $item-width - 50px;
-  }
-}
-
-@function set-coordinate-Y($breakpoint-width) {
-  @if $breakpoint-width == 360px {
-    @return $item-height - 147px;
-  } @else if $breakpoint-width == 576px {
-    @return $item-width - 136px;
-  } @else if $breakpoint-width == 768px {
-    @return $item-height - 90px;
-  } @else if $breakpoint-width == 992px {
-    @return $item-height - 45px;
-  } @else {
-    @return $item-height;
-  }
 }
