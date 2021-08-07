@@ -1,4 +1,4 @@
-@import 'config', 'fonts', 'hex-grid', 'content', 'coordinates';
+@import 'config', 'fonts', 'hex-grid', 'content', 'coordinates', 'password';
 
 body {
   font-family: $secondary-font;
@@ -17,13 +17,21 @@ p {
   font-size: 1.5rem;
 }
 
-.grid-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+button {
+  font-family: $secondary-font;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  padding: 0.5rem 1.5rem;
+  @include transition-ease;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $background-color;
+    cursor: pointer;
+  }
 }
 
 @keyframes transitionIn {

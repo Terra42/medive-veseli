@@ -1,20 +1,4 @@
-/* const hex2Item = document.querySelector('#hex2');
-const hex2Img = document.querySelector('#hex2-img');
-
-const showImage = (event) => {
-  hex2Item.style.display = 'none';
-  hex2Img.style.display = 'block';
-  console.log(event.target.id);
-};
-
-const hideImage = (event) => {
-  hex2Item.style.display = 'block';
-  hex2Img.style.display = 'none';
-  console.log(event.target);
-};
-
-hex2Item.addEventListener('mouseenter', showImage);
-hex2Img.addEventListener('mouseleave', hideImage); */
+// show and hide images in grid
 
 const hexItems = document.querySelectorAll('.hex-content');
 const hexImgs = document.querySelectorAll('.hex-img');

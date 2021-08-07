@@ -21,6 +21,21 @@
   font-style: normal;
 }
 
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
 .hex-grid {
   position: relative;
   width: 325px;
@@ -224,27 +239,9 @@
           align-items: center;
 }
 
-.footer-btn {
-  font-family: "banda_regularregular";
-  font-size: 1.1rem;
-  font-weight: 600;
-  background-color: transparent;
-  border: 3px solid #f1ac3c;
-  color: #f1ac3c;
-  padding: 0.5rem 1.5rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-btn:hover {
-  background-color: #f1ac3c;
-  color: #331907;
-  cursor: pointer;
-}
-
 .content {
   width: 85%;
-  min-height: 55vh;
+  min-height: 40vh;
   margin: 0 auto;
   padding-top: 5vh;
   text-align: center;
@@ -685,6 +682,78 @@
   }
 }
 
+.password {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: default;
+}
+
+.password__container {
+  background-image: url("../img/hexagon_form_transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 18rem;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.password__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.password__form label {
+  font-size: 2rem;
+}
+
+.password__form input {
+  padding: 0.5rem;
+}
+
+.password__form input:focus {
+  background-color: #ffffcc;
+}
+
+.password--invalid {
+  margin-top: 2rem;
+  visibility: hidden;
+  text-align: center;
+}
+
 body {
   font-family: "banda_regularregular";
   background-color: #331907;
@@ -703,19 +772,22 @@ p {
   font-size: 1.5rem;
 }
 
-.grid-container {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
+button {
+  font-family: "banda_regularregular";
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid #f1ac3c;
+  color: #f1ac3c;
+  padding: 0.5rem 1.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #f1ac3c;
+  color: #331907;
+  cursor: pointer;
 }
 
 @-webkit-keyframes transitionIn {

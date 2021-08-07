@@ -30,28 +30,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &-btn {
-    font-family: $secondary-font;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: transparent;
-    border: 3px solid $primary-color;
-    color: $primary-color;
-    padding: 0.5rem 1.5rem;
-    @include transition-ease;
-
-    &:hover {
-      background-color: $primary-color;
-      color: $background-color;
-      cursor: pointer;
-    }
-  }
 }
 
 .content {
   width: 85%;
-  min-height: 55vh;
+  min-height: 40vh;
   margin: 0 auto;
   padding-top: 5vh;
   text-align: center;
