@@ -6,14 +6,11 @@ $text-color: #ffffcc;
 $primary-font: 'skautbold';
 $secondary-font: 'banda_regularregular';
 
-$desktop-breakpoint-height: 825px;
-$desktop-breakpoint-width: 1147px;
-$laptop-breakpoint-height: 824px;
-$laptop-breakpoint-width: 1146px;
-$tablet-breakpoint-height: 730px;
-$tablet-breakpoint-width: 700px;
-$mobile-breakpoint-height: 640px;
-$mobile-breakpoint-width: 360px;
+$xl-breakpoint-width: 1200px;
+$lg-breakpoint-width: 992px;
+$md-breakpoint-width: 768px;
+$sm-breakpoint-width: 576px;
+$xs-breakpoint-width: 360px;
 
 $item-width: 250px;
 $item-height: 230px;
@@ -25,28 +22,32 @@ $item-height: 230px;
 }
 
 @mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @function set-coordinate-X($breakpoint-width) {
-  @if $breakpoint-width == 1146px {
-    @return $item-width - 85px;
-  } @else if $breakpoint-width == 700px {
+  @if $breakpoint-width == 360px {
+    @return $item-width - 178px;
+  } @else if $breakpoint-width == 576px {
+    @return $item-width - 150px;
+  } @else if $breakpoint-width == 768px {
     @return $item-width - 128px;
-  } @else if $breakpoint-width == 360px {
-    @return $item-width - 170px;
+  } @else if $breakpoint-width == 992px {
+    @return $item-width - 88px;
   } @else {
     @return $item-width - 50px;
   }
 }
 
-@function set-coordinate-Y($breakpoint-height) {
-  @if $breakpoint-height == 824px {
-    @return $item-height - 40px;
-  } @else if $breakpoint-height == 730px {
+@function set-coordinate-Y($breakpoint-width) {
+  @if $breakpoint-width == 360px {
+    @return $item-height - 147px;
+  } @else if $breakpoint-width == 576px {
+    @return $item-width - 136px;
+  } @else if $breakpoint-width == 768px {
     @return $item-height - 90px;
-  } @else if $breakpoint-height == 640px {
-    @return $item-height - 139px;
+  } @else if $breakpoint-width == 992px {
+    @return $item-height - 45px;
   } @else {
     @return $item-height;
   }

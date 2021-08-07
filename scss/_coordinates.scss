@@ -1,258 +1,318 @@
 .hex1 {
-  top: set-coordinate-Y($desktop-breakpoint-height) +
-    set-coordinate-Y($desktop-breakpoint-height) / 2;
+  top: set-coordinate-Y($xs-breakpoint-width) +
+    set-coordinate-Y($xs-breakpoint-width) / 2;
 }
-
 .hex2 {
-  left: set-coordinate-X($desktop-breakpoint-width);
+  left: set-coordinate-X($xs-breakpoint-width);
 }
 
 .hex3 {
-  left: set-coordinate-X($desktop-breakpoint-width);
-  top: set-coordinate-Y($desktop-breakpoint-height);
+  left: set-coordinate-X($xs-breakpoint-width);
+  top: set-coordinate-Y($xs-breakpoint-width);
 }
 
 .hex4 {
-  left: set-coordinate-X($desktop-breakpoint-width);
-  top: set-coordinate-Y($desktop-breakpoint-height) * 2;
+  left: set-coordinate-X($xs-breakpoint-width);
+  top: set-coordinate-Y($xs-breakpoint-width) * 2;
 }
 
 .hex5 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 2;
-  top: set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 2;
+  top: set-coordinate-Y($xs-breakpoint-width) / 2;
 }
 
 .hex6 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 2;
-  top: set-coordinate-Y($desktop-breakpoint-height) +
-    set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 2;
+  top: set-coordinate-Y($xs-breakpoint-width) +
+    set-coordinate-Y($xs-breakpoint-width) / 2;
 }
 
 .hex7 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 2;
-  top: set-coordinate-Y($desktop-breakpoint-height) * 2 +
-    set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 2;
+  top: set-coordinate-Y($xs-breakpoint-width) * 2 +
+    set-coordinate-Y($xs-breakpoint-width) / 2;
 }
 
 .hex8 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 3;
-  top: set-coordinate-Y($desktop-breakpoint-height);
+  left: set-coordinate-X($xs-breakpoint-width) * 3;
+  top: set-coordinate-Y($xs-breakpoint-width);
 }
 
 .hex9 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 3;
-  top: set-coordinate-Y($desktop-breakpoint-height) * 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 3;
+  top: set-coordinate-Y($xs-breakpoint-width) * 2;
 }
 
 .hex10 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 4;
-  top: set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width);
+  top: set-coordinate-Y($xs-breakpoint-width) * 3;
 }
 
 .hex11 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 4;
-  top: set-coordinate-Y($desktop-breakpoint-height) +
-    set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 2;
+  top: set-coordinate-Y($xs-breakpoint-width) * 3 +
+    set-coordinate-Y($xs-breakpoint-width) / 2;
 }
 
 .hex12 {
-  left: set-coordinate-X($desktop-breakpoint-width) * 4;
-  top: set-coordinate-Y($desktop-breakpoint-height) * 2 +
-    set-coordinate-Y($desktop-breakpoint-height) / 2;
+  left: set-coordinate-X($xs-breakpoint-width) * 3;
+  top: set-coordinate-Y($xs-breakpoint-width) * 4;
 }
 
-@media (max-width: $laptop-breakpoint-width),
-  (max-height: $laptop-breakpoint-height) {
+@media (min-width: $sm-breakpoint-width) {
   .hex1 {
-    top: set-coordinate-Y($laptop-breakpoint-height) +
-      set-coordinate-Y($laptop-breakpoint-height) / 2;
+    top: set-coordinate-Y($sm-breakpoint-width) +
+      set-coordinate-Y($sm-breakpoint-width) / 2;
   }
-
   .hex2 {
-    left: set-coordinate-X($laptop-breakpoint-width);
+    left: set-coordinate-X($sm-breakpoint-width);
   }
 
   .hex3 {
-    left: set-coordinate-X($laptop-breakpoint-width);
-    top: set-coordinate-Y($laptop-breakpoint-height);
+    left: set-coordinate-X($sm-breakpoint-width);
+    top: set-coordinate-Y($sm-breakpoint-width);
   }
 
   .hex4 {
-    left: set-coordinate-X($laptop-breakpoint-width);
-    top: set-coordinate-Y($laptop-breakpoint-height) * 2;
+    left: set-coordinate-X($sm-breakpoint-width);
+    top: set-coordinate-Y($sm-breakpoint-width) * 2;
   }
 
   .hex5 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 2;
-    top: set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 2;
+    top: set-coordinate-Y($sm-breakpoint-width) / 2;
   }
 
   .hex6 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 2;
-    top: set-coordinate-Y($laptop-breakpoint-height) +
-      set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 2;
+    top: set-coordinate-Y($sm-breakpoint-width) +
+      set-coordinate-Y($sm-breakpoint-width) / 2;
   }
 
   .hex7 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 2;
-    top: set-coordinate-Y($laptop-breakpoint-height) * 2 +
-      set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 2;
+    top: set-coordinate-Y($sm-breakpoint-width) * 2 +
+      set-coordinate-Y($sm-breakpoint-width) / 2;
   }
 
   .hex8 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 3;
-    top: set-coordinate-Y($laptop-breakpoint-height);
+    left: set-coordinate-X($sm-breakpoint-width) * 3;
+    top: set-coordinate-Y($sm-breakpoint-width);
   }
 
   .hex9 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 3;
-    top: set-coordinate-Y($laptop-breakpoint-height) * 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 3;
+    top: set-coordinate-Y($sm-breakpoint-width) * 2;
   }
 
   .hex10 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 4;
-    top: set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width);
+    top: set-coordinate-Y($sm-breakpoint-width) * 3;
   }
 
   .hex11 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 4;
-    top: set-coordinate-Y($laptop-breakpoint-height) +
-      set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 2;
+    top: set-coordinate-Y($sm-breakpoint-width) * 3 +
+      set-coordinate-Y($sm-breakpoint-width) / 2;
   }
 
   .hex12 {
-    left: set-coordinate-X($laptop-breakpoint-width) * 4;
-    top: set-coordinate-Y($laptop-breakpoint-height) * 2 +
-      set-coordinate-Y($laptop-breakpoint-height) / 2;
+    left: set-coordinate-X($sm-breakpoint-width) * 3;
+    top: set-coordinate-Y($sm-breakpoint-width) * 4;
   }
 }
 
-@media (max-width: $tablet-breakpoint-width),
-  (max-height: $tablet-breakpoint-height) {
+@media (min-width: $md-breakpoint-width) {
   .hex1 {
-    top: set-coordinate-Y($tablet-breakpoint-height) +
-      set-coordinate-Y($tablet-breakpoint-height) / 2;
+    top: set-coordinate-Y($md-breakpoint-width) +
+      set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex2 {
-    left: set-coordinate-X($tablet-breakpoint-width);
+    left: set-coordinate-X($md-breakpoint-width);
   }
 
   .hex3 {
-    left: set-coordinate-X($tablet-breakpoint-width);
-    top: set-coordinate-Y($tablet-breakpoint-height);
+    left: set-coordinate-X($md-breakpoint-width);
+    top: set-coordinate-Y($md-breakpoint-width);
   }
 
   .hex4 {
-    left: set-coordinate-X($tablet-breakpoint-width);
-    top: set-coordinate-Y($tablet-breakpoint-height) * 2;
+    left: set-coordinate-X($md-breakpoint-width);
+    top: set-coordinate-Y($md-breakpoint-width) * 2;
   }
 
   .hex5 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 2;
-    top: set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 2;
+    top: set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex6 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 2;
-    top: set-coordinate-Y($tablet-breakpoint-height) +
-      set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 2;
+    top: set-coordinate-Y($md-breakpoint-width) +
+      set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex7 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 2;
-    top: set-coordinate-Y($tablet-breakpoint-height) * 2 +
-      set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 2;
+    top: set-coordinate-Y($md-breakpoint-width) * 2 +
+      set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex8 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 3;
-    top: set-coordinate-Y($tablet-breakpoint-height);
+    left: set-coordinate-X($md-breakpoint-width) * 3;
+    top: set-coordinate-Y($md-breakpoint-width);
   }
 
   .hex9 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 3;
-    top: set-coordinate-Y($tablet-breakpoint-height) * 2;
+    left: set-coordinate-X($md-breakpoint-width) * 3;
+    top: set-coordinate-Y($md-breakpoint-width) * 2;
   }
 
   .hex10 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 4;
-    top: set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 4;
+    top: set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex11 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 4;
-    top: set-coordinate-Y($tablet-breakpoint-height) +
-      set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 4;
+    top: set-coordinate-Y($md-breakpoint-width) +
+      set-coordinate-Y($md-breakpoint-width) / 2;
   }
 
   .hex12 {
-    left: set-coordinate-X($tablet-breakpoint-width) * 4;
-    top: set-coordinate-Y($tablet-breakpoint-height) * 2 +
-      set-coordinate-Y($tablet-breakpoint-height) / 2;
+    left: set-coordinate-X($md-breakpoint-width) * 4;
+    top: set-coordinate-Y($md-breakpoint-width) * 2 +
+      set-coordinate-Y($md-breakpoint-width) / 2;
   }
 }
 
-@media (max-width: $mobile-breakpoint-width),
-  (max-height: $mobile-breakpoint-height) {
+@media screen and (min-width: $lg-breakpoint-width) {
   .hex1 {
-    top: set-coordinate-Y($mobile-breakpoint-height) +
-      set-coordinate-Y($mobile-breakpoint-height) / 2;
+    top: set-coordinate-Y($lg-breakpoint-width) +
+      set-coordinate-Y($lg-breakpoint-width) / 2;
   }
+
   .hex2 {
-    left: set-coordinate-X($mobile-breakpoint-width);
+    left: set-coordinate-X($lg-breakpoint-width);
   }
 
   .hex3 {
-    left: set-coordinate-X($mobile-breakpoint-width);
-    top: set-coordinate-Y($mobile-breakpoint-height);
+    left: set-coordinate-X($lg-breakpoint-width);
+    top: set-coordinate-Y($lg-breakpoint-width);
   }
 
   .hex4 {
-    left: set-coordinate-X($mobile-breakpoint-width);
-    top: set-coordinate-Y($mobile-breakpoint-height) * 2;
+    left: set-coordinate-X($lg-breakpoint-width);
+    top: set-coordinate-Y($lg-breakpoint-width) * 2;
   }
 
   .hex5 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 2;
-    top: set-coordinate-Y($mobile-breakpoint-height) / 2;
+    left: set-coordinate-X($lg-breakpoint-width) * 2;
+    top: set-coordinate-Y($lg-breakpoint-width) / 2;
   }
 
   .hex6 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 2;
-    top: set-coordinate-Y($mobile-breakpoint-height) +
-      set-coordinate-Y($mobile-breakpoint-height) / 2;
+    left: set-coordinate-X($lg-breakpoint-width) * 2;
+    top: set-coordinate-Y($lg-breakpoint-width) +
+      set-coordinate-Y($lg-breakpoint-width) / 2;
   }
 
   .hex7 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 2;
-    top: set-coordinate-Y($mobile-breakpoint-height) * 2 +
-      set-coordinate-Y($mobile-breakpoint-height) / 2;
+    left: set-coordinate-X($lg-breakpoint-width) * 2;
+    top: set-coordinate-Y($lg-breakpoint-width) * 2 +
+      set-coordinate-Y($lg-breakpoint-width) / 2;
   }
 
   .hex8 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 3;
-    top: set-coordinate-Y($mobile-breakpoint-height);
+    left: set-coordinate-X($lg-breakpoint-width) * 3;
+    top: set-coordinate-Y($lg-breakpoint-width);
   }
 
   .hex9 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 3;
-    top: set-coordinate-Y($mobile-breakpoint-height) * 2;
+    left: set-coordinate-X($lg-breakpoint-width) * 3;
+    top: set-coordinate-Y($lg-breakpoint-width) * 2;
   }
 
   .hex10 {
-    left: set-coordinate-X($mobile-breakpoint-width);
-    top: set-coordinate-Y($mobile-breakpoint-height) * 3;
+    left: set-coordinate-X($lg-breakpoint-width) * 4;
+    top: set-coordinate-Y($lg-breakpoint-width) / 2;
   }
 
   .hex11 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 2;
-    top: set-coordinate-Y($mobile-breakpoint-height) * 3 +
-      set-coordinate-Y($mobile-breakpoint-height) / 2;
+    left: set-coordinate-X($lg-breakpoint-width) * 4;
+    top: set-coordinate-Y($lg-breakpoint-width) +
+      set-coordinate-Y($lg-breakpoint-width) / 2;
   }
 
   .hex12 {
-    left: set-coordinate-X($mobile-breakpoint-width) * 3;
-    top: set-coordinate-Y($mobile-breakpoint-height) * 4;
+    left: set-coordinate-X($lg-breakpoint-width) * 4;
+    top: set-coordinate-Y($lg-breakpoint-width) * 2 +
+      set-coordinate-Y($lg-breakpoint-width) / 2;
+  }
+}
+
+@media screen and (min-width: $xl-breakpoint-width) {
+  .hex1 {
+    top: set-coordinate-Y($xl-breakpoint-width) +
+      set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex2 {
+    left: set-coordinate-X($xl-breakpoint-width);
+  }
+
+  .hex3 {
+    left: set-coordinate-X($xl-breakpoint-width);
+    top: set-coordinate-Y($xl-breakpoint-width);
+  }
+
+  .hex4 {
+    left: set-coordinate-X($xl-breakpoint-width);
+    top: set-coordinate-Y($xl-breakpoint-width) * 2;
+  }
+
+  .hex5 {
+    left: set-coordinate-X($xl-breakpoint-width) * 2;
+    top: set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex6 {
+    left: set-coordinate-X($xl-breakpoint-width) * 2;
+    top: set-coordinate-Y($xl-breakpoint-width) +
+      set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex7 {
+    left: set-coordinate-X($xl-breakpoint-width) * 2;
+    top: set-coordinate-Y($xl-breakpoint-width) * 2 +
+      set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex8 {
+    left: set-coordinate-X($xl-breakpoint-width) * 3;
+    top: set-coordinate-Y($xl-breakpoint-width);
+  }
+
+  .hex9 {
+    left: set-coordinate-X($xl-breakpoint-width) * 3;
+    top: set-coordinate-Y($xl-breakpoint-width) * 2;
+  }
+
+  .hex10 {
+    left: set-coordinate-X($xl-breakpoint-width) * 4;
+    top: set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex11 {
+    left: set-coordinate-X($xl-breakpoint-width) * 4;
+    top: set-coordinate-Y($xl-breakpoint-width) +
+      set-coordinate-Y($xl-breakpoint-width) / 2;
+  }
+
+  .hex12 {
+    left: set-coordinate-X($xl-breakpoint-width) * 4;
+    top: set-coordinate-Y($xl-breakpoint-width) * 2 +
+      set-coordinate-Y($xl-breakpoint-width) / 2;
   }
 }
