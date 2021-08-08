@@ -326,7 +326,7 @@
     overflow: hidden;
     position: relative;
     width: 80%;
-    height: 160vh;
+    height: 260vh;
   }
   .iframe-container iframe {
     border: 0;
@@ -350,9 +350,6 @@
     width: 50vw;
     height: 50vh;
   }
-  .iframe-container {
-    height: 130vh;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -375,7 +372,7 @@
     height: 50vh;
   }
   .iframe-container {
-    height: 110vh;
+    height: 220vh;
   }
 }
 
