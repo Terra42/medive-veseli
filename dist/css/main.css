@@ -331,7 +331,7 @@
     overflow: hidden;
     position: relative;
     width: 80%;
-    height: 260vh;
+    height: 120vh;
   }
   .iframe-container iframe {
     border: 0;
@@ -372,13 +372,12 @@
   }
   .content ul {
     width: 60%;
-    padding-left: 10rem;
   }
   .map {
     width: 40vw;
   }
   .iframe-container {
-    height: 220vh;
+    height: 140vh;
   }
 }
 

@@ -1,5 +1,5 @@
 // password check
-const password = 'EvaATobias';
+const password = 'MediveVeseli';
 
 let valueFromStorage = localStorage.getItem('password');
 if (valueFromStorage === password) {
